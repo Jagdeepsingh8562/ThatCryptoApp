@@ -8,7 +8,14 @@
 import Foundation
 import Foundation
 
-// MARK: - CoinResponse
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
+//
+//   let singleCoinResponse = try? newJSONDecoder().decode(SingleCoinResponse.self, from: jsonData)
+
+import Foundation
+
+// MARK: - SingleCoinResponse
 struct SingleCoinResponse: Codable {
     let status: String
     let data: SingleCoinDataClass
@@ -21,17 +28,18 @@ struct SingleCoinDataClass: Codable {
 
 // MARK: - Coin
 struct SingleCoin: Codable {
-    let uuid, symbol, name, coinDescription: String
-    let color: String
+    let uuid, symbol, name: String
+    let coinDescription: String?
+    let color: String?
     let iconURL: String
-    let websiteURL: String
+    let websiteURL: String?
     let links: [Link]
     let supply: Supply
     let numberOfMarkets, numberOfExchanges: Int
     let the24HVolume, marketCap, price, btcPrice: String
-    let change: String
+    let change: String?
     let rank: Int
-    let sparkline: [String]
+    let sparkline: [String?]
     let allTimeHigh: AllTimeHigh
     let coinrankingURL: String
     let tier: Int
@@ -66,5 +74,5 @@ struct Link: Codable {
 // MARK: - Supply
 struct Supply: Codable {
     let confirmed: Bool
-    let total, circulating: String
+    let total, circulating: String?
 }

@@ -16,19 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-1K-vsi" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="0.0" y="91" width="414" height="258"/>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="cb9-1K-vsi" customClass="Chart" customModule="SwiftChart">
+                                <rect key="frame" x="-0.41323792485718513" y="173" width="414.00000000000034" height="200.00000000000003"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="6j6-hz-bhy"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Uqg-0u-Wpa"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cb9-1K-vsi" secondAttribute="bottom" constant="513" id="A8l-ZF-QsL"/>
-                            <constraint firstItem="cb9-1K-vsi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Egl-kc-V3z"/>
-                            <constraint firstItem="cb9-1K-vsi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="InZ-IY-gEK"/>
-                            <constraint firstItem="cb9-1K-vsi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="ezQ-Xe-FU2"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vl6-8J-Cey"/>
                     <connections>
@@ -43,8 +42,8 @@
         <scene sceneID="vyj-Lc-cA8">
             <objects>
                 <navigationController id="hC6-wS-yO0" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ncZ-4o-jxk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ncZ-4o-jxk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -163,7 +162,7 @@
                     <connections>
                         <outlet property="currencyButton" destination="Sz4-EX-VNO" id="OuG-wA-ooJ"/>
                         <outlet property="tableView" destination="ZeC-gH-UwR" id="bff-I5-yvf"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Vp5-Ry-zT0"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="DetailsSegue" id="Vp5-Ry-zT0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXY-s0-dEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

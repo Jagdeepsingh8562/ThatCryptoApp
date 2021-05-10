@@ -17,6 +17,8 @@ class TableViewController: UIViewController {
     var currencies:[Currency] = []
     var currenciesName:[String] = []
     var selectedCurrencySign: String = "$"
+    var singleCoinId:String = ""
+    var currencyId:String?
     
     //DropDown Setup
     let menu: DropDown = {
@@ -41,6 +43,7 @@ class TableViewController: UIViewController {
         super.viewDidAppear(animated)
         menu.selectionAction = { index , title in
             self.selectedCurrencySign = self.currencies[index].sign ?? self.currencies[index].symbol
+            self.currencyId = self.currencies[index].uuid
             CoinAPI.getAllCoins(currencyUuid: self.currencies[index].uuid, completion: self.coinsHandler(success:error:))
             
         }
@@ -103,6 +106,16 @@ extension TableViewController: UITableViewDelegate,UITableViewDataSource {
         }
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        singleCoinId = coins[indexPath.row].uuid
+        performSegue(withIdentifier: "DetailsSegue", sender: nil)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DetailsViewController {
+            vc.currencyId = currencyId
+            vc.singleCoinId = singleCoinId
+        }
+    }
     
 }
