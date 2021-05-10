@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 class CoinAPI {
-    
-    
     struct Const {
         static var ApiKey: String = "coinranking25346f10c91eccd30a3bbef86583dcd8b37cb76c4b2b240b"//as header
         static let baseurl: String = "https://api.coinranking.com/v2"
-        static var allCoins: [Coin] = []
+        static var allCoins: [Coins] = []
+        static var allCurrencies: [Currency] = []
+        static var singleCoin: SingleCoin!
     }
     enum Endpoints {
         case getcoins
@@ -32,13 +32,38 @@ class CoinAPI {
         var url: URL {
             return URL(string: stringValue)! }
     }
-    class func getAllCoins(completion: @escaping(Bool,Error?)->Void) {
-        let _ = taskForGETRequest(url: Endpoints.getcoins.url, responseType: CoinsResponse.self) { response, error in
+    class func getAllCoins(currencyUuid: String?, completion: @escaping(Bool,Error?)->Void) {
+        var urlComps = URLComponents(string: Endpoints.getcoins.stringValue)!
+        if let uuid = currencyUuid {
+            let queryItems = [URLQueryItem(name: "referenceCurrencyUuid", value: uuid)]
+            urlComps.queryItems = queryItems
+        }
+        let _ = taskForGETRequest(url: urlComps.url!, responseType: CoinsResponse.self) { response, error in
             guard let response = response else {
                 completion(false,error)
                 return
             }
             Const.allCoins = response.data.coins
+            completion(true,nil)
+        }
+    }
+    class func getAllCurrency(completion: @escaping(Bool,Error?)->Void) {
+        let _ = taskForGETRequest(url: Endpoints.getcurrencies.url, responseType: CurrencyResponse.self) { response, error in
+            guard let response = response else {
+                completion(false,error)
+                return
+            }
+            Const.allCurrencies = response.data.currencies
+            completion(true,nil)
+        }
+    }
+    class func getSingleCoin(uuid: String,completion: @escaping(Bool,Error?)->Void) {
+        let _ = taskForGETRequest(url: Endpoints.getcoin(uuid).url, responseType: SingleCoinResponse.self) { response, error in
+            guard let response = response else {
+                completion(false,error)
+                return
+            }
+            Const.singleCoin = response.data.coin
             completion(true,nil)
         }
     }

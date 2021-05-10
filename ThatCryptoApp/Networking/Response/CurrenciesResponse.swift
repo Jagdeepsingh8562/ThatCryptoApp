@@ -9,9 +9,12 @@ import Foundation
 // MARK: - CurrencyResponse
 struct CurrencyResponse: Codable {
     let status: String
-    let data: DataClass
+    let data: CurrencyData
 }
-
+struct CurrencyData: Codable {
+    let currencies: [Currency]
+   
+}
 
 // MARK: - Currency
 struct Currency: Codable {

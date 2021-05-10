@@ -12,11 +12,14 @@ struct CoinsResponse: Codable {
     let status: String
     let data: DataClass
 }
-
-
+// MARK: - DataClass
+struct DataClass: Codable {
+    let stats: Stats
+    let coins: [Coins]
+    }
 
 // MARK: - Coin
-struct Coin: Codable {
+struct Coins: Codable {
     let uuid, symbol, name: String
     let color: String?
     let iconURL: String
@@ -38,5 +41,13 @@ struct Coin: Codable {
         case btcPrice
     }
 }
+// MARK: - Stats
+struct Stats: Codable {
+    let total, totalMarkets, totalExchanges: Int
+    let totalMarketCap, total24HVolume: String
 
-
+    enum CodingKeys: String, CodingKey {
+        case total, totalMarkets, totalExchanges, totalMarketCap
+        case total24HVolume = "total24hVolume"
+    }
+}
