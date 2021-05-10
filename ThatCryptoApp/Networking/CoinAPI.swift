@@ -25,7 +25,7 @@ class CoinAPI {
             switch self {
             case .getcoins: return Const.baseurl + "/coins"
             case .getcoin(let uuid): return Const.baseurl + "/coin/\(uuid)"
-            case .getcurrencies: return Const.baseurl + "reference-currencies"
+            case .getcurrencies: return Const.baseurl + "/reference-currencies"
             
             }
         }

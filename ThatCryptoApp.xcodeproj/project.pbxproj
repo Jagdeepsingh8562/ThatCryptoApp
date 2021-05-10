@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B96C92D426486627006EFF98 /* ThatCryptoApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B96C92D326486627006EFF98 /* ThatCryptoApp.xcworkspace */; };
+		B9BD7D062649159F00EF2681 /* HelperExtentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD7D052649159F00EF2681 /* HelperExtentation.swift */; };
 		B9BF68B926479548002B73E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF68B826479548002B73E2 /* TableViewController.swift */; };
 		B9BF68BB264796D9002B73E2 /* CoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF68BA264796D9002B73E2 /* CoinAPI.swift */; };
 		B9BF68BE26479C1A002B73E2 /* CoinsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF68BD26479C1A002B73E2 /* CoinsResponse.swift */; };
@@ -29,6 +30,7 @@
 		2706D940A6D5C24DA33218D7 /* Pods-ThatCryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThatCryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2A722B4F3F9EDD9956B04A8A /* Pods_ThatCryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThatCryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96C92D326486627006EFF98 /* ThatCryptoApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = ThatCryptoApp.xcworkspace; sourceTree = "<group>"; };
+		B9BD7D052649159F00EF2681 /* HelperExtentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtentation.swift; sourceTree = "<group>"; };
 		B9BF68B826479548002B73E2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B9BF68BA264796D9002B73E2 /* CoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPI.swift; sourceTree = "<group>"; };
 		B9BF68BD26479C1A002B73E2 /* CoinsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsResponse.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B9C5E0C72648E4E700CCE9FA /* TableCell.swift */,
+				B9BD7D052649159F00EF2681 /* HelperExtentation.swift */,
 			);
 			name = View;
 			path = Controller;
@@ -273,6 +276,7 @@
 			files = (
 				B9C5E0C82648E4E700CCE9FA /* TableCell.swift in Sources */,
 				B9CFD3542646C3880010F118 /* DetailsViewController.swift in Sources */,
+				B9BD7D062649159F00EF2681 /* HelperExtentation.swift in Sources */,
 				B9BF68BE26479C1A002B73E2 /* CoinsResponse.swift in Sources */,
 				B9CFD3502646C3880010F118 /* AppDelegate.swift in Sources */,
 				B9BF68BB264796D9002B73E2 /* CoinAPI.swift in Sources */,
