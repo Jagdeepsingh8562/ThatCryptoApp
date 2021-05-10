@@ -1,18 +1,16 @@
 PODS:
-  - Charts (3.6.0):
-    - Charts/Core (= 3.6.0)
-  - Charts/Core (3.6.0)
+  - SwiftChart (1.0.1)
 
 DEPENDENCIES:
-  - Charts
+  - SwiftChart
 
 SPEC REPOS:
   trunk:
-    - Charts
+    - SwiftChart
 
 SPEC CHECKSUMS:
-  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
 
-PODFILE CHECKSUM: 8e1ab251fed80c0d9eebc5b37bd288e8814cfe2f
+PODFILE CHECKSUM: 639458cdd71e574876abae1af164734af618ea0f
 
 COCOAPODS: 1.10.1

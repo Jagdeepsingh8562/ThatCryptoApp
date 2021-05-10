@@ -57,14 +57,47 @@ class CoinAPI {
             completion(true,nil)
         }
     }
-    class func getSingleCoin(uuid: String,completion: @escaping(Bool,Error?)->Void) {
-        let _ = taskForGETRequest(url: Endpoints.getcoin(uuid).url, responseType: SingleCoinResponse.self) { response, error in
+    class func getSingleCoin(currencyUuid: String?,uuid: String,completion: @escaping(Bool,Error?)->Void) {
+        var urlComps = URLComponents(string: Endpoints.getcoin(uuid).stringValue)!
+        if let cuuid = currencyUuid {
+            let queryItems = [URLQueryItem(name: "referenceCurrencyUuid", value: cuuid)]
+            urlComps.queryItems = queryItems
+        }
+        let _ = taskForGETRequest(url: urlComps.url!, responseType: SingleCoinResponse.self) { response, error in
             guard let response = response else {
                 completion(false,error)
                 return
             }
             Const.singleCoin = response.data.coin
             completion(true,nil)
+        }
+    }
+    class func getCoinImage(urlString:String ,completion: @escaping (_ image: UIImage?) -> Void) {
+        guard let url = URL(string: urlString)?.deletingPathExtension().appendingPathExtension("png") else {
+            return
+        }
+        if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? UIImage {
+            DispatchQueue.main.async {
+                completion(imageFromCache) }
+        } else {
+            DispatchQueue.global(qos: .userInitiated).async {
+                do {
+                    let imgData = try Data(contentsOf: url)
+                    guard let image = UIImage(data: imgData) else {
+                        completion(nil)
+                        return
+                    }
+                    
+                    DispatchQueue.main.async {
+                        let imageToCahce = image
+                        imageCache.setObject(imageToCahce, forKey: urlString as AnyObject)
+                        completion(imageToCahce)
+                    }
+                } catch {
+                    print(error)
+                }
+            }
+            
         }
     }
     

@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Charts.xcscheme</key>
+		<key>Pods-ThatCryptoApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ThatCryptoApp.xcscheme</key>
+		<key>SwiftChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

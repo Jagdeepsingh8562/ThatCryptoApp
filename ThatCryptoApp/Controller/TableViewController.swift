@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
+let imageCache = NSCache<AnyObject, AnyObject>()
