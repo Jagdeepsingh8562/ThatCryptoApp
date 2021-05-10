@@ -12,11 +12,12 @@ struct CoinsResponse: Codable {
     let status: String
     let data: DataClass
 }
+
 // MARK: - DataClass
 struct DataClass: Codable {
     let stats: Stats
     let coins: [Coins]
-    }
+}
 
 // MARK: - Coin
 struct Coins: Codable {
@@ -25,9 +26,9 @@ struct Coins: Codable {
     let iconURL: String
     let marketCap, price: String
     let listedAt, tier: Int
-    let change: String
+    let change: String?
     let rank: Int
-    let sparkline: [String]
+    let sparkline: [String?]
     let lowVolume: Bool
     let coinrankingURL: String
     let the24HVolume, btcPrice: String
@@ -41,6 +42,7 @@ struct Coins: Codable {
         case btcPrice
     }
 }
+
 // MARK: - Stats
 struct Stats: Codable {
     let total, totalMarkets, totalExchanges: Int

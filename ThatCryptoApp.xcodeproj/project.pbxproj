@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B96C92D426486627006EFF98 /* ThatCryptoApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B96C92D326486627006EFF98 /* ThatCryptoApp.xcworkspace */; };
+		B96F98392649594C007E9A3E /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F98372649594C007E9A3E /* DropDownCell.swift */; };
+		B96F983A2649594C007E9A3E /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96F98382649594C007E9A3E /* DropDownCell.xib */; };
 		B9BD7D062649159F00EF2681 /* HelperExtentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD7D052649159F00EF2681 /* HelperExtentation.swift */; };
 		B9BF68B926479548002B73E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF68B826479548002B73E2 /* TableViewController.swift */; };
 		B9BF68BB264796D9002B73E2 /* CoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF68BA264796D9002B73E2 /* CoinAPI.swift */; };
@@ -30,6 +32,8 @@
 		2706D940A6D5C24DA33218D7 /* Pods-ThatCryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThatCryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2A722B4F3F9EDD9956B04A8A /* Pods_ThatCryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThatCryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96C92D326486627006EFF98 /* ThatCryptoApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = ThatCryptoApp.xcworkspace; sourceTree = "<group>"; };
+		B96F98372649594C007E9A3E /* DropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		B96F98382649594C007E9A3E /* DropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
 		B9BD7D052649159F00EF2681 /* HelperExtentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtentation.swift; sourceTree = "<group>"; };
 		B9BF68B826479548002B73E2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B9BF68BA264796D9002B73E2 /* CoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPI.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			children = (
 				B9C5E0C72648E4E700CCE9FA /* TableCell.swift */,
 				B9BD7D052649159F00EF2681 /* HelperExtentation.swift */,
+				B96F98372649594C007E9A3E /* DropDownCell.swift */,
+				B96F98382649594C007E9A3E /* DropDownCell.xib */,
 			);
 			name = View;
 			path = Controller;
@@ -219,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96C92D426486627006EFF98 /* ThatCryptoApp.xcworkspace in Resources */,
+				B96F983A2649594C007E9A3E /* DropDownCell.xib in Resources */,
 				B9CFD35C2646C3890010F118 /* LaunchScreen.storyboard in Resources */,
 				B9CFD3592646C3890010F118 /* Assets.xcassets in Resources */,
 				B9CFD3572646C3880010F118 /* Main.storyboard in Resources */,
@@ -283,6 +290,7 @@
 				B9BF68C026479C78002B73E2 /* CurrenciesResponse.swift in Sources */,
 				B9F01E7826479E590046EE1C /* ErrorResponse.swift in Sources */,
 				B9F30E4A2647B7AF007EC32A /* SingleCoinResponse.swift in Sources */,
+				B96F98392649594C007E9A3E /* DropDownCell.swift in Sources */,
 				B9CFD3522646C3880010F118 /* SceneDelegate.swift in Sources */,
 				B9BF68B926479548002B73E2 /* TableViewController.swift in Sources */,
 			);

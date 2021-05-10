@@ -67,22 +67,22 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" rowHeight="75" id="3c6-2h-5RB" customClass="TableCell" customModule="ThatCryptoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="75"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" rowHeight="70" id="3c6-2h-5RB" customClass="TableCell" customModule="ThatCryptoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3c6-2h-5RB" id="arc-dj-cdJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePlaceholder" id="qwW-h1-BoP">
-                                                    <rect key="frame" x="20" y="0.0" width="70" height="75"/>
+                                                    <rect key="frame" x="20" y="0.0" width="70" height="70"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="kFr-yp-bpc"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBs-yc-wFl">
-                                                    <rect key="frame" x="118" y="16" width="29" height="17"/>
+                                                    <rect key="frame" x="118" y="16" width="29" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -94,13 +94,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVr-a3-9E0">
-                                                    <rect key="frame" x="118" y="43" width="41" height="15"/>
+                                                    <rect key="frame" x="118" y="38" width="41" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8Y-o1-or0">
-                                                    <rect key="frame" x="162" y="43" width="45" height="15"/>
+                                                    <rect key="frame" x="162" y="38" width="45" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -146,8 +146,22 @@
                             <constraint firstItem="ZeC-gH-UwR" firstAttribute="top" secondItem="r3N-Fq-4rO" secondAttribute="top" id="fj0-Ju-sVb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ThatCryptoApp" id="zqD-N4-Ccj"/>
+                    <navigationItem key="navigationItem" title="ThatCryptoApp" id="zqD-N4-Ccj">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Tt4-P0-z1v">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sz4-EX-VNO">
+                                <rect key="frame" x="302" y="5" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Currency">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeCurrencyAction:" destination="cVM-nj-KH2" eventType="touchUpInside" id="qZ1-9D-90y"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="currencyButton" destination="Sz4-EX-VNO" id="OuG-wA-ooJ"/>
                         <outlet property="tableView" destination="ZeC-gH-UwR" id="bff-I5-yvf"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Vp5-Ry-zT0"/>
                     </connections>
@@ -159,6 +173,9 @@
     </scenes>
     <resources>
         <image name="imagePlaceholder" width="259" height="194"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

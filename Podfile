@@ -7,5 +7,5 @@ target 'ThatCryptoApp' do
 
   # Pods for ThatCryptoApp
   pod "SwiftChart"
-
+  pod 'DropDown'
 end

@@ -1,16 +1,20 @@
 PODS:
+  - DropDown (2.3.13)
   - SwiftChart (1.0.1)
 
 DEPENDENCIES:
+  - DropDown
   - SwiftChart
 
 SPEC REPOS:
   trunk:
+    - DropDown
     - SwiftChart
 
 SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
 
-PODFILE CHECKSUM: 639458cdd71e574876abae1af164734af618ea0f
+PODFILE CHECKSUM: 0ceb333d490ad337ee2e8bdc0a03ddd3a03ac2dc
 
 COCOAPODS: 1.10.1

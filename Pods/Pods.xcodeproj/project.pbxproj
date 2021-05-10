@@ -7,70 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A2C92E35A89EF57C7CA8C5AFF2DB61 /* SwiftChart-dummy.m */; };
-		18370CADF8BE570E988876379EA5672A /* Pods-ThatCryptoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 546AFB625D4F823D534B88125DA07354 /* Pods-ThatCryptoApp-dummy.m */; };
-		2C55E7B33E81A72003109344D25BBF4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7742F108DAD86FE62A81BAD0A3E503B /* ChartColors.swift */; };
+		0EFE27A8EFE011B8758BD790F5ECA609 /* SwiftChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C265CD83891FFAA7FCAC10B83A1ED50 /* SwiftChart-dummy.m */; };
+		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDCDA6ADC76FF3BDC1FF6D657037FE /* DropDownCell.swift */; };
+		373C85B7B6669A0A3705344EDAB91402 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E553BC2729051ADB383D0FBCAE4777 /* ChartColors.swift */; };
+		3D8F642A99CE8201E80614B8D35D74C5 /* Pods-ThatCryptoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 903D94CA5AB780CEB4FF21D858720575 /* Pods-ThatCryptoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C264FDEAB8822A1312526B62E4F1494F /* DPDUIView+Extension.swift */; };
 		55E394B60B04DDB20FC6394A37896CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E2F3C3B7AE4D96B4AC41E47A376D5 /* DPDConstants.swift */; };
+		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B23D5A22034631B714E3CE112120D5 /* DropDown+Appearance.swift */; };
+		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21428CF8CF8E2B2E63C779D16739B3 /* DropDown.swift */; };
 		8497FC2CACB05D799553B2A3B68C7527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1C0BC02D31A18B89BF81B11CA74FB0 /* SwiftChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D52A9B862C2FB42C23106746C0358 /* Chart.swift */; };
-		E9C71EB5D5C5C598888710FC760951E3 /* Pods-ThatCryptoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 903D94CA5AB780CEB4FF21D858720575 /* Pods-ThatCryptoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC046A85972C701A157B19602B26E76 /* ChartSeries.swift */; };
+		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 512ACC3415F6AB608ED4E0FB7611BD52 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA99BC350E0335C531AC5F1900CC01 /* DropDown-dummy.m */; };
+		9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E45A6CE496B5F4FC4AB618EB0E6A6F8 /* SwiftChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB224BB14374FF7B64CAC19575133A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A749E1A87E5B432B9DA802489BBBCF3 /* DPDKeyboardListener.swift */; };
+		BB2C7982860F1E1A3B617D8CC32966AA /* Pods-ThatCryptoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 546AFB625D4F823D534B88125DA07354 /* Pods-ThatCryptoApp-dummy.m */; };
+		C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E89F36993229D1B75DDCC7E56FC12B62 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906DBF813624650596C9E296C5136DF0 /* Chart.swift */; };
+		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B83BCEE56A53AEABD61C9479768296 /* DropDownCell.xib */; };
+		F7951E078EEAB8901537CEA3C6C01859 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B82C364BAE9A40403879119FB799A /* ChartSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		730A70585FCA1B2CCB21D47B59E9EA8A /* PBXContainerItemProxy */ = {
+		702A12A83BE0EB2F72239BEF5FE21964 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4E7BD5B8067AD0B7AFB7967E30BF1BB8;
 			remoteInfo = SwiftChart;
 		};
+		DCA8F7F2FC13C6B936BA9551D41245ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		150CBA2D5AFA434C5F8F7BE2D913450E /* SwiftChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.release.xcconfig; sourceTree = "<group>"; };
+		08B23D5A22034631B714E3CE112120D5 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		0A749E1A87E5B432B9DA802489BBBCF3 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		0CEA1C1D9421BF02B46757E1362D7579 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		1C265CD83891FFAA7FCAC10B83A1ED50 /* SwiftChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftChart-dummy.m"; sourceTree = "<group>"; };
 		20BD5D4E5903CD3817D429473CC1066A /* Pods-ThatCryptoApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThatCryptoApp-Info.plist"; sourceTree = "<group>"; };
+		24E3151144BA153AD4DD660B37C3DC33 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		2D28BEE04A5223AD5D336E11BA75B0B8 /* SwiftChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftChart.modulemap; sourceTree = "<group>"; };
 		2D64C030880C8F93E83B0326B08DB5DA /* Pods-ThatCryptoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ThatCryptoApp-frameworks.sh"; sourceTree = "<group>"; };
-		2E1C0BC02D31A18B89BF81B11CA74FB0 /* SwiftChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-umbrella.h"; sourceTree = "<group>"; };
+		2F3B82C364BAE9A40403879119FB799A /* ChartSeries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartSeries.swift; path = Source/ChartSeries.swift; sourceTree = "<group>"; };
+		353E2F3C3B7AE4D96B4AC41E47A376D5 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
 		3B596698F0E01A1AB8B4F2FBE60383AC /* Pods_ThatCryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThatCryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EF5D03D885222ED7F66D845093853D1 /* SwiftChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftChart.modulemap; sourceTree = "<group>"; };
+		41DB3FB8A4A67C2BCDE2375CAEDE1F77 /* SwiftChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.debug.xcconfig; sourceTree = "<group>"; };
+		4E45A6CE496B5F4FC4AB618EB0E6A6F8 /* SwiftChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-umbrella.h"; sourceTree = "<group>"; };
+		4F21428CF8CF8E2B2E63C779D16739B3 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		512ACC3415F6AB608ED4E0FB7611BD52 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		538AAB850551242ADA01414E6D9E872A /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
 		546AFB625D4F823D534B88125DA07354 /* Pods-ThatCryptoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThatCryptoApp-dummy.m"; sourceTree = "<group>"; };
-		6B2D52A9B862C2FB42C23106746C0358 /* Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = Source/Chart.swift; sourceTree = "<group>"; };
-		6BC046A85972C701A157B19602B26E76 /* ChartSeries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartSeries.swift; path = Source/ChartSeries.swift; sourceTree = "<group>"; };
-		78A2C92E35A89EF57C7CA8C5AFF2DB61 /* SwiftChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftChart-dummy.m"; sourceTree = "<group>"; };
-		87211D1C05418CB846A0C30A6E9F4B60 /* SwiftChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.debug.xcconfig; sourceTree = "<group>"; };
+		62B83BCEE56A53AEABD61C9479768296 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		78CDCDA6ADC76FF3BDC1FF6D657037FE /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		7D9BE182FC212D0E0CDCD5613AFABC47 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
 		903D94CA5AB780CEB4FF21D858720575 /* Pods-ThatCryptoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThatCryptoApp-umbrella.h"; sourceTree = "<group>"; };
+		906DBF813624650596C9E296C5136DF0 /* Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = Source/Chart.swift; sourceTree = "<group>"; };
 		98CE4DD7C9434526AFA2A9A4A755102F /* Pods-ThatCryptoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThatCryptoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1523D9D54C8ADB467DCBBED7339F4B7 /* SwiftChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-prefix.pch"; sourceTree = "<group>"; };
+		C264FDEAB8822A1312526B62E4F1494F /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		C4DA99BC350E0335C531AC5F1900CC01 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		C90D7D058F032698FB342420BFA5DA9F /* SwiftChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftChart.release.xcconfig; sourceTree = "<group>"; };
+		C9BDFE9DED1BA7BF32E70F44C851D8CB /* SwiftChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftChart-prefix.pch"; sourceTree = "<group>"; };
 		CB1B36E35A4A6D4965DAF3BEC90F1598 /* Pods-ThatCryptoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThatCryptoApp.modulemap"; sourceTree = "<group>"; };
 		CDE09E7AB24C118CE9602A6C3F5C702F /* Pods-ThatCryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThatCryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5465CF2C31172DE9790E9BECDB89F7 /* Pods-ThatCryptoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThatCryptoApp.release.xcconfig"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5E553BC2729051ADB383D0FBCAE4777 /* ChartColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColors.swift; path = Source/ChartColors.swift; sourceTree = "<group>"; };
 		DA11DAA3DD535B56869A7A582768874B /* Pods-ThatCryptoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThatCryptoApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F427F9FFCBF188DE6ADACF6E58C1A73D /* SwiftChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftChart-Info.plist"; sourceTree = "<group>"; };
-		F7742F108DAD86FE62A81BAD0A3E503B /* ChartColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColors.swift; path = Source/ChartColors.swift; sourceTree = "<group>"; };
+		EF4DD17D4C3002B6029AA78FABA81668 /* SwiftChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftChart-Info.plist"; sourceTree = "<group>"; };
+		F0BE64A4418F1EAB0B1CB78B1D2437F2 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		366E3F7AB5D46318BC77935071235911 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C55E7B33E81A72003109344D25BBF4D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C75323E3A181BCC5B455CBD0102BF7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8497FC2CACB05D799553B2A3B68C7527 /* Foundation.framework in Frameworks */,
 				55E394B60B04DDB20FC6394A37896CED /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8078C5F39E6CF4AA33C3519B5EB7FA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB224BB14374FF7B64CAC19575133A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9727840973A9C2692E58F7089A7C243E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +125,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		46D5BF0FA353DF95EAC4CF34F7ADFB91 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				353E2F3C3B7AE4D96B4AC41E47A376D5 /* DPDConstants.swift */,
+				0A749E1A87E5B432B9DA802489BBBCF3 /* DPDKeyboardListener.swift */,
+				C264FDEAB8822A1312526B62E4F1494F /* DPDUIView+Extension.swift */,
+				4F21428CF8CF8E2B2E63C779D16739B3 /* DropDown.swift */,
+				08B23D5A22034631B714E3CE112120D5 /* DropDown+Appearance.swift */,
+				78CDCDA6ADC76FF3BDC1FF6D657037FE /* DropDownCell.swift */,
+				926B70C04AA383A93207BFEC4C0A674D /* Resources */,
+				D00D5196A33480DDD359D9B3BE180094 /* Support Files */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,44 +149,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		71B7291F733237863A94361DDBD72A96 /* Pods */ = {
+		643C18527ED79793B3FA0465D3BCCC11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				777D982B568F857DFF944A82D12D74E0 /* SwiftChart */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		777D982B568F857DFF944A82D12D74E0 /* SwiftChart */ = {
-			isa = PBXGroup;
-			children = (
-				6B2D52A9B862C2FB42C23106746C0358 /* Chart.swift */,
-				F7742F108DAD86FE62A81BAD0A3E503B /* ChartColors.swift */,
-				6BC046A85972C701A157B19602B26E76 /* ChartSeries.swift */,
-				A343E77D4DB4ED1EA8987A5C40BD8FAF /* Support Files */,
-			);
-			path = SwiftChart;
-			sourceTree = "<group>";
-		};
-		9F77A8629DF26CCB10A260DAC14A61AF /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
 				3B596698F0E01A1AB8B4F2FBE60383AC /* Pods_ThatCryptoApp.framework */,
 				0386647CB37914AEC8D0A23E3BF2B668 /* SwiftChart.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A343E77D4DB4ED1EA8987A5C40BD8FAF /* Support Files */ = {
+		926B70C04AA383A93207BFEC4C0A674D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3EF5D03D885222ED7F66D845093853D1 /* SwiftChart.modulemap */,
-				78A2C92E35A89EF57C7CA8C5AFF2DB61 /* SwiftChart-dummy.m */,
-				F427F9FFCBF188DE6ADACF6E58C1A73D /* SwiftChart-Info.plist */,
-				A1523D9D54C8ADB467DCBBED7339F4B7 /* SwiftChart-prefix.pch */,
-				2E1C0BC02D31A18B89BF81B11CA74FB0 /* SwiftChart-umbrella.h */,
-				87211D1C05418CB846A0C30A6E9F4B60 /* SwiftChart.debug.xcconfig */,
-				150CBA2D5AFA434C5F8F7BE2D913450E /* SwiftChart.release.xcconfig */,
+				62B83BCEE56A53AEABD61C9479768296 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B5019B2E8D6503662947A80A4FC2469B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D28BEE04A5223AD5D336E11BA75B0B8 /* SwiftChart.modulemap */,
+				1C265CD83891FFAA7FCAC10B83A1ED50 /* SwiftChart-dummy.m */,
+				EF4DD17D4C3002B6029AA78FABA81668 /* SwiftChart-Info.plist */,
+				C9BDFE9DED1BA7BF32E70F44C851D8CB /* SwiftChart-prefix.pch */,
+				4E45A6CE496B5F4FC4AB618EB0E6A6F8 /* SwiftChart-umbrella.h */,
+				41DB3FB8A4A67C2BCDE2375CAEDE1F77 /* SwiftChart.debug.xcconfig */,
+				C90D7D058F032698FB342420BFA5DA9F /* SwiftChart.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftChart";
@@ -145,15 +190,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		C5B7333D519AC5AAEA4CC7045DF8A733 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46D5BF0FA353DF95EAC4CF34F7ADFB91 /* DropDown */,
+				DFFF1E29FD1259876031BDD04FD3DB7A /* SwiftChart */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				71B7291F733237863A94361DDBD72A96 /* Pods */,
-				9F77A8629DF26CCB10A260DAC14A61AF /* Products */,
+				C5B7333D519AC5AAEA4CC7045DF8A733 /* Pods */,
+				643C18527ED79793B3FA0465D3BCCC11 /* Products */,
 				B7EE03B79E0BF7F532B35EFC36A56317 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D00D5196A33480DDD359D9B3BE180094 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0BE64A4418F1EAB0B1CB78B1D2437F2 /* DropDown.modulemap */,
+				C4DA99BC350E0335C531AC5F1900CC01 /* DropDown-dummy.m */,
+				0CEA1C1D9421BF02B46757E1362D7579 /* DropDown-Info.plist */,
+				538AAB850551242ADA01414E6D9E872A /* DropDown-prefix.pch */,
+				512ACC3415F6AB608ED4E0FB7611BD52 /* DropDown-umbrella.h */,
+				7D9BE182FC212D0E0CDCD5613AFABC47 /* DropDown.debug.xcconfig */,
+				24E3151144BA153AD4DD660B37C3DC33 /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		D0E2401702FCCB90C1E478599602A58F /* Pods-ThatCryptoApp */ = {
@@ -173,14 +242,25 @@
 			path = "Target Support Files/Pods-ThatCryptoApp";
 			sourceTree = "<group>";
 		};
+		DFFF1E29FD1259876031BDD04FD3DB7A /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				906DBF813624650596C9E296C5136DF0 /* Chart.swift */,
+				D5E553BC2729051ADB383D0FBCAE4777 /* ChartColors.swift */,
+				2F3B82C364BAE9A40403879119FB799A /* ChartSeries.swift */,
+				B5019B2E8D6503662947A80A4FC2469B /* Support Files */,
+			);
+			path = SwiftChart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		608AD79D7BD74929B4B3AE9C61836EE9 /* Headers */ = {
+		2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C71EB5D5C5C598888710FC760951E3 /* Pods-ThatCryptoApp-umbrella.h in Headers */,
+				9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +269,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6B025901B92784B8037B236F392AA3 /* SwiftChart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1219DF420B8381AB9C4B50EBC050CA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8F642A99CE8201E80614B8D35D74C5 /* Pods-ThatCryptoApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,21 +303,40 @@
 		};
 		7499FA017589BDA8CE75FF97EF729525 /* Pods-ThatCryptoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C623EC0FAD71DD0047AED75A803B60 /* Build configuration list for PBXNativeTarget "Pods-ThatCryptoApp" */;
+			buildConfigurationList = 7B50F15ED977F7F8F1D4A049B6903A3D /* Build configuration list for PBXNativeTarget "Pods-ThatCryptoApp" */;
 			buildPhases = (
-				608AD79D7BD74929B4B3AE9C61836EE9 /* Headers */,
-				B555454B38F4757656D646FFC3484CD7 /* Sources */,
-				366E3F7AB5D46318BC77935071235911 /* Frameworks */,
-				11B1ABB5446117EE5F379426558EBAA8 /* Resources */,
+				B1219DF420B8381AB9C4B50EBC050CA7 /* Headers */,
+				BEDFDDC64E47561E3131EEC997CA1C9D /* Sources */,
+				8078C5F39E6CF4AA33C3519B5EB7FA84 /* Frameworks */,
+				D85243A6E10DF270F2697D06E6A6D9DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CDAD9A17727B341D463098046220B209 /* PBXTargetDependency */,
+				139B9EA65C0A8842621919BD434D47F0 /* PBXTargetDependency */,
+				4CABC6CA760A2FAF92E1776C5EFDB70C /* PBXTargetDependency */,
 			);
 			name = "Pods-ThatCryptoApp";
 			productName = "Pods-ThatCryptoApp";
 			productReference = 3B596698F0E01A1AB8B4F2FBE60383AC /* Pods_ThatCryptoApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */;
+			buildPhases = (
+				2BB5683F7D1AA8FB2F94DA252A664DB8 /* Headers */,
+				FAFA782452D3B598A37FB459CD314120 /* Sources */,
+				9727840973A9C2692E58F7089A7C243E /* Frameworks */,
+				D0143B72ED2669C4E98A5B8BBCE72151 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown;
+			productName = DropDown;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +346,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -250,10 +357,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9F77A8629DF26CCB10A260DAC14A61AF /* Products */;
+			productRefGroup = 643C18527ED79793B3FA0465D3BCCC11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				7499FA017589BDA8CE75FF97EF729525 /* Pods-ThatCryptoApp */,
 				4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */,
 			);
@@ -261,14 +369,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		11B1ABB5446117EE5F379426558EBAA8 /* Resources */ = {
+		923DC915C4C0B60AEC3A935835AA08C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		923DC915C4C0B60AEC3A935835AA08C1 /* Resources */ = {
+		D0143B72ED2669C4E98A5B8BBCE72151 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85243A6E10DF270F2697D06E6A6D9DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,29 +405,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B555454B38F4757656D646FFC3484CD7 /* Sources */ = {
+		BEDFDDC64E47561E3131EEC997CA1C9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18370CADF8BE570E988876379EA5672A /* Pods-ThatCryptoApp-dummy.m in Sources */,
+				BB2C7982860F1E1A3B617D8CC32966AA /* Pods-ThatCryptoApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA782452D3B598A37FB459CD314120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */,
+				BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */,
+				4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */,
+				6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */,
+				95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */,
+				842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */,
+				361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CDAD9A17727B341D463098046220B209 /* PBXTargetDependency */ = {
+		139B9EA65C0A8842621919BD434D47F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = DCA8F7F2FC13C6B936BA9551D41245ED /* PBXContainerItemProxy */;
+		};
+		4CABC6CA760A2FAF92E1776C5EFDB70C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftChart;
 			target = 4E7BD5B8067AD0B7AFB7967E30BF1BB8 /* SwiftChart */;
-			targetProxy = 730A70585FCA1B2CCB21D47B59E9EA8A /* PBXContainerItemProxy */;
+			targetProxy = 702A12A83BE0EB2F72239BEF5FE21964 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0FD5019A7676FA1D768549AF389C4D0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87211D1C05418CB846A0C30A6E9F4B60 /* SwiftChart.debug.xcconfig */;
+			baseConfigurationReference = 41DB3FB8A4A67C2BCDE2375CAEDE1F77 /* SwiftChart.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -324,7 +460,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftChart/SwiftChart-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftChart/SwiftChart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,7 +479,76 @@
 			};
 			name = Debug;
 		};
-		63A26A10A9C630DCA092616244380055 /* Release */ = {
+		4A17D27FFBCE427192C281661D3F5767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9BE182FC212D0E0CDCD5613AFABC47 /* DropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E3151144BA153AD4DD660B37C3DC33 /* DropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
+				PRODUCT_MODULE_NAME = DropDown;
+				PRODUCT_NAME = DropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93A49E51D075F8DC899DF03011F4344A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE5465CF2C31172DE9790E9BECDB89F7 /* Pods-ThatCryptoApp.release.xcconfig */;
 			buildSettings = {
@@ -380,43 +585,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8FB307591023869B4234834B051CDB0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE09E7AB24C118CE9602A6C3F5C702F /* Pods-ThatCryptoApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -546,9 +714,46 @@
 			};
 			name = Release;
 		};
+		DE722ECDBD8BCA55BA612C65FA719BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE09E7AB24C118CE9602A6C3F5C702F /* Pods-ThatCryptoApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F8FC0C66F9E2DD8B0DA3099247785153 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 150CBA2D5AFA434C5F8F7BE2D913450E /* SwiftChart.release.xcconfig */;
+			baseConfigurationReference = C90D7D058F032698FB342420BFA5DA9F /* SwiftChart.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -561,7 +766,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftChart/SwiftChart-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftChart/SwiftChart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,20 +798,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C623EC0FAD71DD0047AED75A803B60 /* Build configuration list for PBXNativeTarget "Pods-ThatCryptoApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8FB307591023869B4234834B051CDB0E /* Debug */,
-				63A26A10A9C630DCA092616244380055 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
 				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B50F15ED977F7F8F1D4A049B6903A3D /* Build configuration list for PBXNativeTarget "Pods-ThatCryptoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE722ECDBD8BCA55BA612C65FA719BD7 /* Debug */,
+				93A49E51D075F8DC899DF03011F4344A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBED57D13F9A2559E14BCD92E7CFF597 /* Build configuration list for PBXNativeTarget "DropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A17D27FFBCE427192C281661D3F5767 /* Debug */,
+				8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

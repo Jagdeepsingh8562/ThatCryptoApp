@@ -23,7 +23,11 @@ class TableCell: UITableViewCell {
         let doubleValue = Double(a)!
         priceLabel.text = currencySymbol + String(format: "%.3f", doubleValue)
     }
-    func setChange(_ a : String)  {
+    func setChange(_ a : String?)  {
+        guard let a = a  else {
+            changeLabel.text = ""
+            return
+        }
         let doubleValue = Double(a)!
         var arrow: String = ""
         if doubleValue < 0 {
