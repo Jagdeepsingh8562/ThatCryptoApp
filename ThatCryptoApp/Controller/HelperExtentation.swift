@@ -66,5 +66,20 @@ extension UIViewController {
         let doubleValue = Double(price)!
         priceLabel.text = currencySymbol + String(format: "%.3f", doubleValue)
     }
+    func formatPrice(_ number: Double) -> String {
+        let thousand = number / 1000
+        let million = number / 1000000
+        let billion = number / 1000000000
+
+        if billion >= 1.0 {
+            return "\(round(billion*10)/10)Billion"
+        } else if million >= 1.0 {
+            return "\(round(million*10)/10)Million"
+        } else if thousand >= 1.0 {
+            return ("\(round(thousand*10/10))K")
+        } else {
+            return "\(Int(number))"
+        }
+    }
 }
 
