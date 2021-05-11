@@ -19,7 +19,6 @@ extension UIViewController {
         }
     }
     
-    
     func openLink(_ url: String) {
         guard let url = URL(string: url), UIApplication.shared.canOpenURL(url) else {
             showAlert(message: "Cannot open link.", title: "Invalid Link")
@@ -27,7 +26,7 @@ extension UIViewController {
         }
         UIApplication.shared.open(url, options: [:])
     }
-
+    
     func internetChecker(completion: @escaping (Bool) -> Void){
         let monitor = NWPathMonitor()
         let netqueue = DispatchQueue(label: "InternetConnectionMonitor")
@@ -44,10 +43,28 @@ extension UIViewController {
                 }
             }
         }
-        
         monitor.start(queue: netqueue)
-    
     }
-
+    func setChangePercentage(_ changeLabel: UILabel,percentage: String?){
+        guard let a = percentage  else {
+            changeLabel.text = ""
+            return
+        }
+        let doubleValue = Double(a)!
+        var arrow: String = ""
+        if doubleValue < 0 {
+            changeLabel.textColor = .red
+            arrow = "\u{2193}"
+        }
+        else {
+            changeLabel.textColor = .systemGreen
+            arrow = "\u{2191}"
+        }
+        changeLabel.text = arrow + String(format: "%.2f", doubleValue) + "%"
+    }
+    func setPrice(_ priceLabel: UILabel,price: String,currencySymbol: String) {
+        let doubleValue = Double(price)!
+        priceLabel.text = currencySymbol + String(format: "%.3f", doubleValue)
+    }
 }
 

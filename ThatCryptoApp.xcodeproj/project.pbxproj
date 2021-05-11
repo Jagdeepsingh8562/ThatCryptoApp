@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90EEAFF264A798400EF51F1 /* CoinHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90EEAFE264A798400EF51F1 /* CoinHistoryResponse.swift */; };
 		B96C92D426486627006EFF98 /* ThatCryptoApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B96C92D326486627006EFF98 /* ThatCryptoApp.xcworkspace */; };
 		B96F98392649594C007E9A3E /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F98372649594C007E9A3E /* DropDownCell.swift */; };
 		B96F983A2649594C007E9A3E /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96F98382649594C007E9A3E /* DropDownCell.xib */; };
@@ -31,6 +32,7 @@
 		24ABF58D68598C6115F56B79 /* Pods-ThatCryptoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThatCryptoApp.release.xcconfig"; path = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp.release.xcconfig"; sourceTree = "<group>"; };
 		2706D940A6D5C24DA33218D7 /* Pods-ThatCryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThatCryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-ThatCryptoApp/Pods-ThatCryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2A722B4F3F9EDD9956B04A8A /* Pods_ThatCryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThatCryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90EEAFE264A798400EF51F1 /* CoinHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHistoryResponse.swift; sourceTree = "<group>"; };
 		B96C92D326486627006EFF98 /* ThatCryptoApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = ThatCryptoApp.xcworkspace; sourceTree = "<group>"; };
 		B96F98372649594C007E9A3E /* DropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
 		B96F98382649594C007E9A3E /* DropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				B9BF68BF26479C78002B73E2 /* CurrenciesResponse.swift */,
 				B9F01E7726479E590046EE1C /* ErrorResponse.swift */,
 				B9F30E492647B7AF007EC32A /* SingleCoinResponse.swift */,
+				B90EEAFE264A798400EF51F1 /* CoinHistoryResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				B9CFD3542646C3880010F118 /* DetailsViewController.swift in Sources */,
 				B9BD7D062649159F00EF2681 /* HelperExtentation.swift in Sources */,
 				B9BF68BE26479C1A002B73E2 /* CoinsResponse.swift in Sources */,
+				B90EEAFF264A798400EF51F1 /* CoinHistoryResponse.swift in Sources */,
 				B9CFD3502646C3880010F118 /* AppDelegate.swift in Sources */,
 				B9BF68BB264796D9002B73E2 /* CoinAPI.swift in Sources */,
 				B9BF68C026479C78002B73E2 /* CurrenciesResponse.swift in Sources */,

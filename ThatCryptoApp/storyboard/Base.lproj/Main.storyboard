@@ -25,13 +25,42 @@
                                     <constraint firstAttribute="height" constant="200" id="Uqg-0u-Wpa"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIz-ae-uFP">
+                                <rect key="frame" x="20" y="123" width="52" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdJ-Nb-t9h">
+                                <rect key="frame" x="352" y="123" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-vP-9ZS">
+                                <rect key="frame" x="82" y="123" width="53" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PIz-ae-uFP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="2WD-lJ-j35"/>
+                            <constraint firstItem="PIz-ae-uFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kfz-0D-azK"/>
+                            <constraint firstItem="mdJ-Nb-t9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="YBr-xf-e0W"/>
+                            <constraint firstItem="zdj-vP-9ZS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="ZDq-F7-3Yl"/>
+                            <constraint firstItem="zdj-vP-9ZS" firstAttribute="leading" secondItem="PIz-ae-uFP" secondAttribute="trailing" constant="10" id="eG0-ba-U3K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mdJ-Nb-t9h" secondAttribute="trailing" constant="23" id="jma-zJ-REu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vl6-8J-Cey"/>
                     <connections>
+                        <outlet property="changeLabel" destination="zdj-vP-9ZS" id="dhe-ty-ciW"/>
                         <outlet property="chartView" destination="cb9-1K-vsi" id="Dta-ZS-Usm"/>
+                        <outlet property="priceLabel" destination="mdJ-Nb-t9h" id="TRz-cA-ZCk"/>
+                        <outlet property="symbolLabel" destination="PIz-ae-uFP" id="dED-N0-MTa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

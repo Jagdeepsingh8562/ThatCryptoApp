@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol ChartDelegate: class {
+public protocol ChartDelegate: AnyObject {
 
     /**
     Tells the delegate that the specified chart has been touched.

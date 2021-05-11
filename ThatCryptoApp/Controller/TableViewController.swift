@@ -57,7 +57,7 @@ class TableViewController: UIViewController {
             
         }
         else {
-           //showAlert(message: error?.localizedDescription ?? "Somethting is wrong", title: "Error")
+           showAlert(message: error?.localizedDescription ?? "Somethting is wrong", title: "Error")
            // print(error)
         }
     }
@@ -67,8 +67,8 @@ class TableViewController: UIViewController {
             tableView.reloadData()
         }
         else {
-            //showAlert(message: error?.localizedDescription ?? "Somethting is wrong", title: "Error")
-            print(error)
+            showAlert(message: error?.localizedDescription ?? "Somethting is wrong", title: "Error")
+           
         }
     }
     @IBAction func changeCurrencyAction(_ sender: Any) {
@@ -98,8 +98,8 @@ extension TableViewController: UITableViewDelegate,UITableViewDataSource {
         
         cell.titleLabel.text = coin.name
         cell.symbolLabel.text = coin.symbol
-        cell.setChange(coin.change)
-        cell.setPrice(coin.price, currencySymbol: selectedCurrencySign)
+        setChangePercentage(cell.changeLabel, percentage: coin.change)
+        setPrice(cell.priceLabel,price:coin.price,currencySymbol: selectedCurrencySign)
         CoinAPI.getCoinImage(urlString: coin.iconURL) { image in
             cell.iconView.image = image
     
@@ -115,6 +115,7 @@ extension TableViewController: UITableViewDelegate,UITableViewDataSource {
         if let vc = segue.destination as? DetailsViewController {
             vc.currencyId = currencyId
             vc.singleCoinId = singleCoinId
+            vc.currencySymbol = selectedCurrencySign
         }
     }
     

@@ -19,26 +19,5 @@ class TableCell: UITableViewCell {
        //custom logic goes here
         
     }
-    func setPrice(_ a: String,currencySymbol: String) {
-        let doubleValue = Double(a)!
-        priceLabel.text = currencySymbol + String(format: "%.3f", doubleValue)
-    }
-    func setChange(_ a : String?)  {
-        guard let a = a  else {
-            changeLabel.text = ""
-            return
-        }
-        let doubleValue = Double(a)!
-        var arrow: String = ""
-        if doubleValue < 0 {
-            changeLabel.textColor = .red
-            arrow = "\u{2193}"
-        }
-        else {
-            changeLabel.textColor = .systemGreen
-            arrow = "\u{2191}"
-        }
-        changeLabel.text = arrow + String(format: "%.2f", doubleValue) + "%"
-    }
     
 }

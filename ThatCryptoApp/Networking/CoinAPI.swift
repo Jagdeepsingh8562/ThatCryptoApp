@@ -15,18 +15,20 @@ class CoinAPI {
         static var allCoins: [Coins] = []
         static var allCurrencies: [Currency] = []
         static var singleCoin: SingleCoin!
+        static var coinHistory: [History] = []
+        static var historyChange: String?
     }
     enum Endpoints {
         case getcoins
         case getcoin(String)
         case getcurrencies
-        
+        case getCoinHistory(String)
         var stringValue: String {
             switch self {
             case .getcoins: return Const.baseurl + "/coins"
             case .getcoin(let uuid): return Const.baseurl + "/coin/\(uuid)"
             case .getcurrencies: return Const.baseurl + "/reference-currencies"
-            
+            case .getCoinHistory(let uuid): return Const.baseurl + "/coin/\(uuid)/history"
             }
         }
         var url: URL {
@@ -69,6 +71,21 @@ class CoinAPI {
                 return
             }
             Const.singleCoin = response.data.coin
+            completion(true,nil)
+        }
+    }
+    class func getCoinHistory(timePeriod: String?,currencyUuid: String?,uuid: String,completion: @escaping(Bool,Error?)->Void) {
+        var urlComps = URLComponents(string: Endpoints.getCoinHistory(uuid).stringValue)!
+        
+        let queryItem = [URLQueryItem(name: "referenceCurrencyUuid", value: currencyUuid ?? "yhjMzLPhuIDl"),URLQueryItem(name: "timePeriod", value: timePeriod ?? "24h")]
+        urlComps.queryItems = queryItem
+        let _ = taskForGETRequest(url: urlComps.url!, responseType: HistoryResponse.self) { response, error in
+            guard let response = response else {
+                completion(false,error)
+                return
+            }
+            Const.coinHistory = response.data.history
+            Const.historyChange = response.data.change
             completion(true,nil)
         }
     }
