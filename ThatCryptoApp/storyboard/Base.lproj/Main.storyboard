@@ -255,7 +255,7 @@
             </objects>
             <point key="canvasLocation" x="-954" y="21"/>
         </scene>
-        <!--ThatCryptoApp-->
+        <!--Home-->
         <scene sceneID="nSP-UI-wt0">
             <objects>
                 <viewController id="cVM-nj-KH2" customClass="TableViewController" customModule="ThatCryptoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -346,7 +346,7 @@
                             <constraint firstItem="ZeC-gH-UwR" firstAttribute="top" secondItem="r3N-Fq-4rO" secondAttribute="top" id="fj0-Ju-sVb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ThatCryptoApp" id="zqD-N4-Ccj">
+                    <navigationItem key="navigationItem" title="Home" id="zqD-N4-Ccj">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Tt4-P0-z1v">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sz4-EX-VNO">
                                 <rect key="frame" x="302" y="5" width="92" height="34"/>
