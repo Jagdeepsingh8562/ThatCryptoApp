@@ -7,6 +7,7 @@
  1. Get price info about the most trending cryptocurrencies in the market.
  2. Shows the cryptocurrency's price history in the form of a line chart.
  3. Adapts to dark or light mode based on the system.
+ 4. Change the Currency in the app via Drop Down Menu
 
  ## Screenshots
  <img src = "Screenshots/screenshot_1.png" width = "180">  &nbsp; &nbsp; <img src = "Screenshots/screenshot_2.png" width = "180">  &nbsp; &nbsp; <img src = "Screenshots/screenshot_3.png" width = "180">  &nbsp; &nbsp;  <img src = "Screenshots/screenshot_4.png" width = "180"> 
