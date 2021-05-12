@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="cb9-1K-vsi" customClass="Chart" customModule="SwiftChart">
-                                <rect key="frame" x="-0.41323792485718513" y="173" width="414.00000000000034" height="200.00000000000003"/>
+                                <rect key="frame" x="0.0" y="173" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="safeArea" id="6j6-hz-bhy"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,6 +195,7 @@
                             <constraint firstItem="Zyr-im-ADT" firstAttribute="top" secondItem="Qer-iy-fwG" secondAttribute="bottom" constant="39" id="8Gr-SA-uR1"/>
                             <constraint firstItem="hRl-Pl-TYf" firstAttribute="centerY" secondItem="jC3-1Q-GYL" secondAttribute="centerY" id="AXf-It-36r"/>
                             <constraint firstItem="eLw-5c-Ks2" firstAttribute="top" secondItem="Qer-iy-fwG" secondAttribute="bottom" constant="28" id="EFC-vG-uu6"/>
+                            <constraint firstItem="cb9-1K-vsi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ESt-nM-nre"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGz-v5-MyE" secondAttribute="trailing" constant="20" id="IXa-al-PKx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qer-iy-fwG" secondAttribute="trailing" constant="10" id="KED-Nt-ZoT"/>
                             <constraint firstItem="PIz-ae-uFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kfz-0D-azK"/>
@@ -202,6 +203,7 @@
                             <constraint firstItem="3Ky-x2-74S" firstAttribute="leading" secondItem="IXx-c3-5qV" secondAttribute="trailing" constant="15" id="LIA-vS-Md3"/>
                             <constraint firstItem="Zyr-im-ADT" firstAttribute="leading" secondItem="eLw-5c-Ks2" secondAttribute="trailing" constant="15" id="OmL-AK-AeM"/>
                             <constraint firstItem="hG9-E1-vbY" firstAttribute="top" secondItem="Zud-FQ-GTL" secondAttribute="bottom" constant="15" id="POv-tF-2Vb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cb9-1K-vsi" secondAttribute="trailing" id="Pgz-YN-pM4"/>
                             <constraint firstItem="Qer-iy-fwG" firstAttribute="top" secondItem="cb9-1K-vsi" secondAttribute="bottom" constant="8" id="Qa3-nn-0Qo"/>
                             <constraint firstItem="jC3-1Q-GYL" firstAttribute="leading" secondItem="Zud-FQ-GTL" secondAttribute="trailing" constant="15" id="Rxa-tF-O3h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ciZ-H9-XlT" secondAttribute="trailing" constant="20" id="T0c-8t-Eqb"/>
@@ -230,8 +232,14 @@
                         <outlet property="chartView" destination="cb9-1K-vsi" id="Dta-ZS-Usm"/>
                         <outlet property="marketCapLabel" destination="sGz-v5-MyE" id="hnR-OR-nCB"/>
                         <outlet property="noOfMarketsLabel" destination="fOS-Tr-tKY" id="Ai1-Tq-kfD"/>
+                        <outlet property="oneYearButton" destination="Q8w-WJ-Obe" id="KFb-UC-afe"/>
                         <outlet property="priceLabel" destination="mdJ-Nb-t9h" id="TRz-cA-ZCk"/>
+                        <outlet property="sevenDayButton" destination="lh6-zx-DcS" id="ijx-kQ-RXK"/>
                         <outlet property="symbolLabel" destination="PIz-ae-uFP" id="dED-N0-MTa"/>
+                        <outlet property="thirtyDayButton" destination="XYg-gN-mrX" id="jvS-GF-cnk"/>
+                        <outlet property="threeHourButton" destination="yo1-lG-wvY" id="aJE-Gm-xPZ"/>
+                        <outlet property="threeMonthButton" destination="KjK-Jk-UgF" id="Kh9-Bp-Phj"/>
+                        <outlet property="twetyHourButton" destination="SPl-gG-ic5" id="Mcd-R0-skV"/>
                         <outlet property="volumeLabel" destination="ciZ-H9-XlT" id="jKV-ff-BZa"/>
                     </connections>
                 </viewController>

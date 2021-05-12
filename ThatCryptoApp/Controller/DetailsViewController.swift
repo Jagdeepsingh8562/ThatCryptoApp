@@ -20,6 +20,14 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var allTimeHighLabel: UILabel!
     @IBOutlet weak var noOfMarketsLabel: UILabel!
     
+    @IBOutlet weak var threeHourButton: UIButton!
+    @IBOutlet weak var twetyHourButton: UIButton!
+    @IBOutlet weak var sevenDayButton: UIButton!
+    @IBOutlet weak var thirtyDayButton: UIButton!
+    @IBOutlet weak var oneYearButton: UIButton!
+    @IBOutlet weak var threeMonthButton: UIButton!
+
+    
     var singleCoinId:String = ""
     var currencyId:String?
     var coin:SingleCoin!
@@ -32,8 +40,16 @@ class DetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         CoinAPI.getSingleCoin(currencyUuid: currencyId, uuid: singleCoinId, completion: coinHandler(success:error:))
         CoinAPI.getCoinHistory(timePeriod: nil, currencyUuid: currencyId, uuid: singleCoinId, completion: historyHandler(success:error:))
+        roundButtons()
     }
-    
+    func roundButtons() {
+        threeHourButton.layer.cornerRadius = 10
+        twetyHourButton.layer.cornerRadius = 10
+        sevenDayButton.layer.cornerRadius = 10
+        thirtyDayButton.layer.cornerRadius = 10
+        threeMonthButton.layer.cornerRadius = 10
+        oneYearButton.layer.cornerRadius = 10
+    }
     func historyHandler(success:Bool,error:Error?) -> Void {
         if success {
             chartView.removeAllSeries()
