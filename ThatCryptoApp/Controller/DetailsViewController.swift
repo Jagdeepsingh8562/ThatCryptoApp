@@ -68,7 +68,7 @@ class DetailsViewController: UIViewController {
             setupView()
             
         } else {
-            showAlert(message: "\(error)" ?? "Something went wrong", title: "Error")
+            showAlert(message: "\(String(describing: error))" , title: "Error")
         }
     }
     
@@ -90,6 +90,7 @@ class DetailsViewController: UIViewController {
         volumeLabel.text = formatPrice(Double(coin.the24HVolume) ?? 0.00)
         setPrice(allTimeHighLabel, price: coin.allTimeHigh.price, currencySymbol: currencySymbol)
         noOfMarketsLabel.text = String(coin.numberOfMarkets)
+        self.title = coin.name
     }
     
     private func addChartSeries(_ data: [Double]) {
