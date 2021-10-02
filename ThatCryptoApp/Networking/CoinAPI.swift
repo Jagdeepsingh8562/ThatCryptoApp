@@ -67,6 +67,7 @@ class CoinAPI {
         }
         let _ = taskForGETRequest(url: urlComps.url!, responseType: SingleCoinResponse.self) { response, error in
             guard let response = response else {
+                print(error)
                 completion(false,error)
                 return
             }
@@ -119,7 +120,9 @@ class CoinAPI {
     }
     
     class func taskForGETRequest<ResponseType: Decodable>(url: URL, responseType: ResponseType.Type, completion: @escaping (ResponseType?, Error?) -> Void) -> URLSessionDataTask {
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        var urlreq = URLRequest(url: url)
+        urlreq.addValue(Const.ApiKey, forHTTPHeaderField: "x-access-token")
+        let task = URLSession.shared.dataTask(with: urlreq) { data, response, error in
             guard let data = data else {
                 DispatchQueue.main.async {
                     completion(nil, error)
@@ -142,6 +145,7 @@ class CoinAPI {
 //                        completion(nil, error)
 //                    }
 //                }
+                print(error)
                completion(nil,error)
             }
         }

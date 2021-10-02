@@ -68,7 +68,7 @@ class DetailsViewController: UIViewController {
             setupView()
             
         } else {
-            showAlert(message: error?.localizedDescription ?? "Something went wrong", title: "Error")
+            showAlert(message: "\(error)" ?? "Something went wrong", title: "Error")
         }
     }
     
